@@ -1,0 +1,39 @@
+footer {
+  width: 100%;
+  background: #97c0e4;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .text {
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .text p {
+  color: black;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  footer .text {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .text {
+    width: 181px;
+    /* font-size: 20px; */
+  }
+  footer .text p {
+    text-align: center;
+    font-size: 15px;
+}
+}

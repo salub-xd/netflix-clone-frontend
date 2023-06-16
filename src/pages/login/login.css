@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* fORM LOGIN */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(19, 84, 122)
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  /* background: linear-gradient(
+    180deg,
+    rgba(19, 84, 122, 1) 0%,
+    rgba(61, 54, 92, 1) 100%
+  ); */
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.login-container .logo img {
+  width: 200px;
+  position: absolute;
+  top: 25px;
+  left: 46px;
+}
+.login-container .login {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0 0 0 / 86%);
+  min-width: 330px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  /* height: 450px; */
+  border-radius: 4px;
+}
+
+.login h1 {
+  width: 100px;
+  /* padding: 0 37px; */
+  font-size: 30px;
+  align-self: flex-start;
+  color: white;
+  padding-bottom: 8px;
+}
+
+.login .input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self: flex-start; */
+  margin: 20px 1px;
+  flex-direction: column;
+}
+
+.login label {
+  color: rgb(100, 100, 100);
+  align-self: flex-start;
+  font-size: 18px;
+  padding: 8px 0;
+}
+
+.login input {
+  padding: 9px 10px;
+  min-width: 310px;
+  /* width: 19vw; */
+  border: none;
+  /* border-bottom: 2.5px solid rgb(151, 151, 151); */
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: #333;
+  height: 30px;
+}
+
+.login input:focus {
+  background-color: #4a4a4a;
+}
+
+.login .forgotPassword {
+  /* color: #767676; */
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.login .forgotPassword a {
+  /* text-decoration: none;
+      color: #767676; */
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #1c399a;
+  transition: 0.3s ease-in-out;
+}
+
+.login #login:hover {
+  transition: 0.4s ease-in-out;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.login #login {
+  margin-top: 15px;
+  padding: 15px 30px;
+  background: #e50914;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 330px;
+  /* width: 20.2vw; */
+  letter-spacing: 0.3px;
+}
+
+.login #login a {
+  color: white;
+  text-decoration: none;
+}
+
+.login .anotherWay {
+  margin-top: 40px;
+  display: flex;
+  align-self: flex-start;
+  /* margin-left: 5px; */
+}
+
+.login .anotherWay h2 a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 15px;
+  font-weight: 100;
+}
+.login .anotherWay h2 a span {
+  color: white;
+  padding-left: 5px;
+}
+.login .anotherWay h2 a span:hover {
+  text-decoration: underline;
+}
+
+.login .anotherWay h2.forgetPass {
+  margin-left: 60px;
+}
+.login .anotherWay h2.forgetPass a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container {
+    background: black;
+  }
+  .login-container .logo img {
+    width: 150px;
+  }
+  .login-container .login {
+    min-width: 240px;
+    padding: 25px;
+    border: 2px solid white;
+  }
+
+  .login .input-field {
+    margin: 15px 1px;
+  }
+
+  .login input {
+    min-width: 280px;
+    font-size: 15px;
+  }
+  .login #login {
+    min-width: 300px;
+  }
+  .forgotPassword {
+    font-size: 15px;
+  }
+  .login .anotherWay h2.forgetPass {
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .login-container .logo img {
+    width: 130px;
+    left: 30px;
+  }
+  .login-container .login {
+    min-width: 200px;
+    padding: 25px;
+  }
+  .login input {
+    min-width: 240px;
+    font-size: 15px;
+  }
+  .login #login {
+    min-width: 260px;
+  }
+
+  .login .anotherWay h2 a {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .login input {
+    min-width: 200px;
+  }
+  .login #login {
+    min-width: 220px;
+  }
+
+  .login .anotherWay {
+    align-self: unset;
+    flex-direction: column-reverse;
+  }
+}

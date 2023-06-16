@@ -1,0 +1,131 @@
+.featured_container {
+  background: rgb(1 1 1 / 69%);
+  width: 100%;
+  height: 720px;
+}
+.featured {
+  background: black
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/76c10fc9-7ccd-4fbf-bc59-f16a468921ca/4fb4af6e-d0ca-4c7f-b004-b34226727e55/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 720px;
+}
+.info {
+  width: 500px;
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.info img {
+  width: 400px;
+  border-radius: 10px;
+}
+.info .desc {
+  width: 450px;
+  margin: 5px 0;
+}
+.info .buttons {
+  display: flex;
+}
+.info button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.info button.play {
+  color: white;
+  color: black;
+}
+.info button.more {
+  background-color: gray;
+  color: white;
+}
+span {
+  padding: 5px;
+}
+@media only screen and (max-width: 1000px) {
+  /* .featured {
+    width: 100%;
+    height: 459px;
+  } */
+}
+@media only screen and (max-width: 700px) {
+  /* .featured {
+    width: 100%;
+    height: 500px;
+    background-size: contain;
+  } */
+  .featured .info {
+    width: 350px;
+  }
+  .featured .info img {
+    width: 300px;
+  }
+  .info .desc {
+    width: 300px;
+    margin: 10px 0;
+  }
+  .info button {
+    margin: 5px;
+    padding: 5px 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .featured {
+    height: 95vh;
+  }
+  .featured .info {
+    align-items: center;
+    width: 350px;
+    left: 20px;
+    bottom: 150px;
+  }
+  .featured .info img {
+    width: 300px;
+  }
+  .info .desc {
+    display: none;
+    width: 200px;
+    margin: 10px 0;
+  }
+  .info button {
+    margin: 15px;
+    padding: 5px 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .featured {
+    height: 95vh;
+  }
+  .featured .info {
+    align-items: flex-start;
+    width: 300px;
+    left: 20px;
+    bottom: 150px;
+  }
+  .featured .info img {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .featured {
+    height: 90vh;
+  }
+  .featured .info {
+    align-items: center;
+    width: 250px;
+    left: 5px;
+    bottom: 150px;
+  }
+  .featured .info img {
+    width: 200px;
+  }
+}
